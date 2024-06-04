@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+
+
+.header {
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+.nav1 {
+    margin-top: 10px;
+}
+.nav-list  {
+    list-style: none;
+    display: flex;
+}
+.nav-item {
+    margin: 0 20px;
+}
+.nav-link1 {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-opcion {
+    display: flex;
+    align-items: center;
+}
+.user-opcion a {
+    text-decoration: none;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-opcion span {
+    text-decoration: none;
+    color: white;
+}
+.user-opcion span:hover{
+    background-color: aqua;
+    color: black;
+    border-radius: 5rem;
+}
+.logo img {
+    width: 8rem;
+    height: auto;
+}
+.logo img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .2s;
+}
+.nav-link1 img {
+    width: 6rem;
+    height: auto;
+}
+.user-opcion img {
+    width: 6rem;
+    height: auto;
+}
+.menu-toggle1 img {
+    width: 6rem;
+    height: auto;
+}
+.menu-toggle1 {
+    cursor: pointer;
+    display: none;
+    
+}
+@media  (max-width: 768px) {
+    .menu-toggle1 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 10000000;
+      
+    }
+    .nav1 {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: auto;
+        background: #333;
+
+
+    }
+    h1 {
+        text-align: center;
+    }
+    .nav1.active {
+        display: block; /* Mostrar la navegación cuando el menú hamburguesa está activo */
+        flex-direction: column;
+        justify-content: flex-end;
+        position: absolute;
+        z-index: 9999;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list .nav-item {
+        margin: 10px 0; /* Ajusta el espacio entre los elementos */
+    }
+    .nav-link1 img {
+        width: 4rem;
+        height: auto;
+       
+    }
+    .user-opcion img {
+        width: 4rem;
+        height: auto;
+    }
+    .logo img {
+        width: 6rem;
+        height: auto;
+    }
+    .menu-toggle1 img {
+        width: 4rem;
+        height: auto;
+    }
+    .user-opcion {
+        margin-top: 10px;
+    }
+}
