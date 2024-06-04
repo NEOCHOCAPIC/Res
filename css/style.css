@@ -5,11 +5,17 @@
 }
 body {
     overflow-x: hidden;
+    background-color: #FFFACD;
 }
 
-
+.contenedor {
+    padding: 2rem;
+    max-width: 90%;
+    
+    margin: 0 auto;
+}
 .header {
-    background: #333;
+    background: #292929;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -35,6 +41,14 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.nav-link1:hover {
+    background-color: aqua;
+    color: black;
+    border-radius: 10rem;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .2s;
+}
 .user-opcion {
     display: flex;
     align-items: center;
@@ -50,10 +64,13 @@ body {
     text-decoration: none;
     color: white;
 }
-.user-opcion span:hover{
+.user-opcion img:hover{
     background-color: aqua;
     color: black;
     border-radius: 5rem;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .2s;
 }
 .logo img {
     width: 8rem;
@@ -81,6 +98,9 @@ body {
     display: none;
     
 }
+h1{
+    text-align: center;
+}
 @media  (max-width: 768px) {
     .menu-toggle1 {
         display: flex;
@@ -88,6 +108,9 @@ body {
         justify-content: flex-end;
         z-index: 10000000;
       
+    }
+    h2 {
+        text-align: center;
     }
     .nav1 {
         display: none;
@@ -136,4 +159,127 @@ body {
     .user-opcion {
         margin-top: 10px;
     }
+}
+
+.hero {
+    background: url('restaurant-hero.jpg') no-repeat center center/cover;
+    color: black;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background: #c30e2d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background: #a00b24;
+}
+
+/* Estilos para los platos */
+.menu-preview {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.menu-preview h2 {
+    margin-bottom: 20px;
+}
+
+.dishes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.dish {
+    background: #f4f4f4;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dish img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.dish h3 {
+    margin: 15px 0 10px;
+}
+
+.dish p {
+    margin-bottom: 10px;
+}
+
+.dish button {
+    background: #c30e2d;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dish button:hover {
+    background: #a00b24;
+}
+/* Estilos para el footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h2 {
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
 }
